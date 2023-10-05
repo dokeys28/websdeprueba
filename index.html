@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Medica</title>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="div-titulo">
+            <h1 id="titulo">Historia Medica</h1>
+        </div>
+        <div id="div-datosgenerales">
+            <h2 id="datosgenerales">Datos Generales</h2>
+            <p>Nombre completo</p><input type="text" id="input-nombre"/>
+            <p>Edad</p><input type="number" id="input-edad"/>
+            <p>Sexo</p><input type="text" id="input-sexo"/>
+        </div>
+        <div id="div-motivodeconsulta">
+            <h2 id="motivodeconsulta">Motivo de consulta</h2>
+            <select id="select-motivodeconsulta">
+                <option value="n/a">Seleccionar Sistema</option>
+                <option value="Cabeza">Cabeza</option>
+                <option value="Cuello">Cuello</option>
+                <option value="Torax">Torax</option>
+                <option value="Abdomen">Abdomen</option>
+                <option value="Extremidades">Extremidades</option>
+            </select>
+            <select id="select-motivoespecifico">
+            </select>
+        </div>
+        <button id="enviar" type="button">Enviar</button>
+        <h2 id="error"></h2>
+        <div id="div-listado">
+            <h1>Listado de Pacientes</h1>
+            <ul id="listado"></ul>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
